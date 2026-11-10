@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saksham Hada — Design Tokens and Typography</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Design tokens and typography</h1>
+    <p>
+      A quick sample page so the type scale and spacing tokens can be seen.
+      Sizes, colors, and spacing all come from custom properties.
+    </p>
+
+    <h2>Second-level heading</h2>
+    <p>
+      Body text sits at the base size with a comfortable line height. Read more
+      in the <a href="#code">notes below</a>.
+    </p>
+
+    <h3>Third-level heading</h3>
+    <ul>
+      <li>Colors defined once as tokens</li>
+      <li>Font sizes on a five-step scale</li>
+      <li>Spacing on a shared scale</li>
+    </ul>
+
+    <h4>Fourth-level heading</h4>
+    <blockquote>
+      Consistency is not a feature you add at the end; it comes from deciding
+      the small values once and reusing them.
+    </blockquote>
+
+    <h2 id="code">Code sample</h2>
+    <p>Inline code looks like <code>var(--color-primary)</code>, and a block:</p>
+    <pre><code>h1 {
+  font-size: var(--text-2xl);
+}</code></pre>
+  </main>
+</body>
+
+</html>

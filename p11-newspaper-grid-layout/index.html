@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Daily Grid — Newspaper Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="masthead">
+    <h1>The Daily Grid</h1>
+    <p class="tagline">Layout news for beginners &middot; Tuesday, 10 November 2026</p>
+  </header>
+
+  <main>
+    <article class="featured">
+      <h2>Grid gives the page its columns</h2>
+      <p class="byline">By Saksham Hada</p>
+      <p>
+        A newspaper page is the classic three-column layout. Here the featured
+        story takes two of those columns, leaving the third for shorter items.
+      </p>
+      <p>
+        Grid is a good fit because the rows and columns are defined once on the
+        container, and each story is placed into them with a simple span.
+      </p>
+    </article>
+
+    <article class="story">
+      <h3>Spans stay readable</h3>
+      <p>A story that covers two columns should keep its line length sensible.</p>
+    </article>
+
+    <article class="story">
+      <h3>Gaps do the spacing</h3>
+      <p>One gap value separates every column and row on the page.</p>
+    </article>
+  </main>
+
+  <aside class="sidebar">
+    <h2>In brief</h2>
+    <h3>One line rule</h3>
+    <p>Keep the column count low enough to read comfortably.</p>
+    <h3>Order matters</h3>
+    <p>In-page order should match the order shown on a narrow screen.</p>
+    <h3>Footer note</h3>
+    <p>The footer spans every column, just like the masthead.</p>
+  </aside>
+
+  <footer>
+    <p>&copy; 2026 The Daily Grid. SH publication.</p>
+  </footer>
+</body>
+
+</html>

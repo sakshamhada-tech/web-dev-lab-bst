@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Grid: two-dimensional page skeleton with named areas */
+body {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  min-height: 100vh;
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background-color: #f8fafc;
+}
+
+.site-header {
+  grid-area: header;
+  /* Flexbox: one row of items aligned along a single axis */
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #1e293b;
+}
+
+.logo {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav-links {
+  /* Flexbox: links sit in a row and push to the right */
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: #f8fafc;
+  text-decoration: none;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid #d9e2ec;
+}
+
+.sidebar h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul {
+  padding-left: 1rem;
+}
+
+.sidebar a {
+  color: #1d4ed8;
+}
+
+main {
+  grid-area: main;
+  padding: 1.5rem 1rem;
+}
+
+main h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  /* Grid: cards line up in rows and columns of equal width */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  /* Flexbox: stack card content and push the link to the bottom */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #d9e2ec;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  color: #3e4c59;
+}
+
+.card a {
+  margin-top: auto;
+  color: #1d4ed8;
+}
+
+.site-footer {
+  grid-area: footer;
+  /* Flexbox: a single row of copyright text and links */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #52606d;
+  border-top: 1px solid #d9e2ec;
+}
+
+.footer-links {
+  /* Flexbox: short list of links in a row */
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #1d4ed8;
+}
+
+/* One media query: stack the skeleton and the sidebar */
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #d9e2ec;
+  }
+}

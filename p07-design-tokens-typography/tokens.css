@@ -1,0 +1,28 @@
+:root {
+  /* Colors */
+  --color-primary: #1d4ed8;
+  --color-text: #1f2933;
+  --color-background: #ffffff;
+  --color-muted: #667085;
+
+  /* Font families */
+  --font-sans: system-ui, Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+
+  /* Font-size scale */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.25rem;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Line height */
+  --line-height: 1.6;
+}
